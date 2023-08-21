@@ -1,0 +1,14 @@
+@import '../../../../../dist/scss/variables.scss';
+
+.sub-title {
+    text-align: center;
+    font-family: $font-family;
+    color: $font-primary-color;
+}
+
+.contain {
+    text-align: justify;
+    text-indent: 14px;
+    font-family: $font-family;
+    color: $font-primary-color;
+}

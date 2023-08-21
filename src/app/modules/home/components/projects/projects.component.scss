@@ -1,0 +1,21 @@
+@import '../../../../../dist/scss/variables.scss';
+
+.sub-title {
+    text-align: center;
+    font-family: $font-family;
+    color: $font-primary-color;
+}
+
+.container {
+    background-color: aquamarine;
+    
+    margin: 10px auto;
+    max-width: 300px;
+    
+    font-family: $font-family;
+    
+    color: $font-primary-color;
+    
+    border-color: black;
+    border-style: dashed;
+}
