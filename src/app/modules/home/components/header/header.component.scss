@@ -7,15 +7,16 @@
     padding: 10px;
     min-width: 100vw;
     height: 70px;    
-
+    
+    font-family: $font-family;
     color: $font-primary-color;
+    font-size: 1em;
 }
 
 .nav-bar {
     min-width: 100vw;
     padding: 10px;
     background-color: white;
-    box-shadow: 0 10px 100px rgba(0,0,0,.1);
 }
 
 .nav-bar-link {
@@ -23,11 +24,13 @@
 
     text-decoration: none;
     
-    font-weight: bold;
-    
     margin-right: 10px;
     
     transition-duration: 0.3s;
+    
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 1em;
 }
 
 .nav-bar-link:hover {
