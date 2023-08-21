@@ -1,0 +1,35 @@
+@import '../../../../../dist/scss/variables.scss';
+
+.header {
+    background-color: white;
+    
+    text-align: center;
+    padding: 10px;
+    min-width: 100vw;
+    height: 70px;    
+
+    color: $font-primary-color;
+}
+
+.nav-bar {
+    min-width: 100vw;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 10px 100px rgba(0,0,0,.1);
+}
+
+.nav-bar-link {
+    color: $font-primary-color;
+
+    text-decoration: none;
+    
+    font-weight: bold;
+    
+    margin-right: 10px;
+    
+    transition-duration: 0.3s;
+}
+
+.nav-bar-link:hover {
+    color: $font-secondary-color;
+}
