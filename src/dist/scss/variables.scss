@@ -1,6 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
-$font-family: 'Roboto', sans-serif;
+$color-primary: #111111;
+$color-secondary: #333333;
+$color-tertiary: #fff;
+$color-quaternary: #7843E9;
 
-$font-primary-color: rgb(51, 51, 51);
-$font-secondary-color: rgba(124, 2, 124, 0.781);
+$font-family: 'Open Sans', sans-serif;
+
+$font-primary-color: $color-secondary;
+$font-secondary-color: $color-primary;
+$font-tertiary-color: $color-tertiary;
+$font-quaternary-color: $color-quaternary;
+
+$image-background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(../../assets/svg/background.svg);

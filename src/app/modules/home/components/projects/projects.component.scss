@@ -10,7 +10,10 @@
     background-color: aquamarine;
     
     margin: 10px auto;
-    max-width: 300px;
+    padding: 10px;
+
+    max-width: 330px;
+    height: 350px;
     
     font-family: $font-family;
     
@@ -18,4 +21,8 @@
     
     border-color: black;
     border-style: dashed;
+}
+
+.loading {
+    background-color: #0086d3;
 }

@@ -1,9 +1,33 @@
 @import '../../../../../dist/scss/variables.scss';
 
-.sub-title {
+main {
+    background-image: $image-background;
+    background-position: center;
+
+    height: 80vh;
+    // margin-top: 10px;
+    padding: 7px;
+
+    position: relative;
+}
+
+.container {
+    max-width: 500px;
+    // margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.title {
     text-align: center;
     font-family: $font-family;
+    font-size: 2em;
     color: $font-primary-color;
+
+    margin-bottom: 10px;
 }
 
 .contain {
