@@ -1,41 +1,46 @@
 @import '../../../../../dist/scss/variables.scss';
 
 .header {
-    // background-color: white;
     background-color: $color-quaternary;
     
     text-align: center;
     max-width: 100vw;
-    height: 90px;
-    // height: 15vh;    
+    height: 50px;
+    padding: 8px;
     
     font-family: $font-family;
-    // color: $font-primary-color;
     color: $font-tertiary-color;
     font-size: 1em;
 
-    // background-image: linear-gradient(white, $color-quaternary);
+    display: flex;
+    align-items: center;
 }
 
 .img-logo {
-    width: 40.31px;
-    // height: 15%;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.name {
+    text-transform: uppercase;
+    // font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .nav-bar {
+    text-align: right;
     max-width: 100vw;
-    padding: 10px;
-    // background-color: white;
+    padding: 7px;
     background-color: $color-quaternary;
 }
 
 .nav-bar-link {
-    // color: $font-primary-color;
     color: $font-tertiary-color;
 
     text-decoration: none;
     
-    margin-right: 10px;
+    margin-left: 5px;
     padding: 6px;
     border-radius: 5px;
     
@@ -47,6 +52,5 @@
 }
 
 .nav-bar-link:hover {
-    // color: $font-quaternary-color;
     background-color: $color-effect-secondary
 }

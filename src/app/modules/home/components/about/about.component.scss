@@ -5,14 +5,13 @@ main {
     background-position: center;
 
     height: 80vh;
-    // margin-top: 10px;
     padding: 7px;
 
     position: relative;
 }
 
 .container {
-    max-width: 500px;
+    max-width: 700px;
     // margin: auto;
     position: absolute;
     top: 50%;
@@ -23,6 +22,7 @@ main {
 
 .title {
     text-align: center;
+    text-transform: uppercase;
     font-family: $font-family;
     font-size: 2em;
     color: $font-primary-color;
@@ -32,8 +32,9 @@ main {
 }
 
 .contain {
-    // text-align: justify;
-    text-indent: 14px;
+    margin: 20px auto;
+    
+    text-align: center;
     font-family: $font-family;
     color: $font-primary-color;
     text-shadow: $text-shadow;
@@ -49,9 +50,9 @@ article {
 }
 
 .button {
-    min-width: 150px;
-    height: 50px;
-    padding: 10px;
+    // min-width: 200px;
+    // height: 50px;
+    padding: 15px 80px;
     
     border: none;
     border-radius: 5px;
@@ -61,6 +62,7 @@ article {
 
     text-transform: uppercase;
     font-family: $font-family;
+    font-size: 1.05em;
     font-weight: bold;
 
     transition-duration: 0.3s;
