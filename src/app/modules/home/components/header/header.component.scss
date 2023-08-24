@@ -23,9 +23,14 @@
 
 .name {
     text-transform: uppercase;
-    // font-variant: small-caps;
     font-weight: bold;
     font-size: 1.2em;
+}
+
+.focus {
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 .nav-bar {
