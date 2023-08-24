@@ -9,25 +9,31 @@ import { Project } from '../../model/project';
 export class ProjectsComponent {
   projectList: Project[] = [
     {
-      title: 'titulo projeto 1', 
+      title: 'calculadora', 
       img: '#', 
-      imgAlt: 'alt projeto 1',
-      about: 'descrição do projeto 1', 
-      loading: false
+      imgAlt: 'projeto calculadora',
+      about: 'Calculadora feita usando apenas HTML, CSS e JavaScript. Possui as quatro operações básicas', 
+      loading: false,
+      linkGitHub: 'https://github.com/artucorreia/calculadora',
+      linkWeb: 'https://artucorreia.github.io/calculadora/'
     },
     {
-      title: 'titulo projeto 2', 
+      title: 'to-do list angular', 
       img: '#', 
-      imgAlt: 'alt projeto 2',
-      about: 'descrição do projeto 2', 
-      loading: true
+      imgAlt: 'projeto to-do list Angular',
+      about: 'Lista de tarefas, feita com o framework Angular. Possui as opções de marcar tarefa como feita, deletar tarefas e também de edita-las, também possui localStorage', 
+      loading: false,
+      linkGitHub: 'https://github.com/artucorreia/app-todo-list',
+      linkWeb: 'https://artucorreia.github.io/app-todo-list/'
     },
     {
-      title: 'titulo projeto 3', 
+      title: 'to-do list js', 
       img: '#', 
-      imgAlt: 'alt projeto 3' ,
-      about: 'descrição do projeto 3', 
-      loading: false
+      imgAlt: 'projeto to-do list JS' ,
+      about: 'Para esse projeto utilizei HTML5, CSS3, JavaScript além de Bootstrap. O usuário pode editar suas tarefas, marcar como feita e também deletar, nesses casos as tarefas vão para suas páginas correspondentes "concluidas" ou "deletadas". Possui localStorage', 
+      loading: false,
+      linkGitHub: 'https://github.com/artucorreia/lista-tarefas',
+      linkWeb: 'https://artucorreia.github.io/lista-tarefas/'
     }
   ];
 

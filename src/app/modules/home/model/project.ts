@@ -4,4 +4,6 @@ export interface Project {
     imgAlt: string;
     about: string;
     loading: boolean;
+    linkGitHub: string;
+    linkWeb: string;
 }

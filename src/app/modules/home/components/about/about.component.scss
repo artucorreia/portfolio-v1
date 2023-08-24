@@ -1,10 +1,14 @@
 @import '../../../../../dist/scss/variables.scss';
 
+* {
+    font-family: $font-family;
+}
+
 main {
     background-image: $image-background;
     background-position: center;
 
-    height: 80vh;
+    height: 82vh;
     padding: 7px;
 
     position: relative;
@@ -12,7 +16,6 @@ main {
 
 .container {
     max-width: 700px;
-    // margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -21,7 +24,6 @@ main {
 }
 
 .title {
-    font-family: $font-family;
     font-size: 2.1em;
     font-weight: 800;
 
@@ -38,7 +40,6 @@ main {
     margin: 20px auto;
     
     text-align: center;
-    font-family: $font-family;
     color: $font-primary-color;
     text-shadow: $text-shadow;
 }
@@ -53,8 +54,6 @@ article {
 }
 
 .button {
-    // min-width: 200px;
-    // height: 50px;
     padding: 15px 80px;
     
     border: none;
@@ -64,15 +63,14 @@ article {
     color: $font-tertiary-color;
 
     text-transform: uppercase;
-    font-family: $font-family;
     font-size: 1.05em;
     font-weight: bold;
 
     transition-duration: 0.3s;
 
     box-shadow: $box-shadow;
-}
 
-.button:hover {
-    background-color: $color-effect-primary;
+    &:hover {
+        background-color: $color-effect-primary;
+    }
 }
