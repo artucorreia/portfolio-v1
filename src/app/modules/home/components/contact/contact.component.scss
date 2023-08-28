@@ -3,3 +3,44 @@
 * {
     font-family: $font-family;
 }
+
+.container {
+    background-image: $image-background;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $font-primary-color;
+    padding: 25px 0;
+}
+
+section {
+    // max-width: 800px;
+    padding: 15px;
+    width: 88vw;
+    background-color: $color-tertiary;
+    margin: auto;
+}
+
+article label {
+    display: block;
+
+    color: $font-primary-color;
+
+    text-transform: capitalize;
+}
+
+.input {
+    display: block;
+    margin: auto;
+
+    // max-width: 700px;
+    width: 82vw;
+    padding: 1em;
+
+    font-weight: 600;
+    border: none;
+    background-color: #f0f0f0;
+}
