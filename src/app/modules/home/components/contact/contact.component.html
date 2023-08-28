@@ -1,22 +1,24 @@
-<main class="container">
+<main class="container" id="contact">
     <h1 class="title">contato</h1>
-    <section>
+    <section class="card">
         <form action="https://api.staticforms.xyz/submit" method="post">
-            <article>
-                <label for="name">nome</label>
-                <input type="text" id="name" placeholder="Digite seu nome" class="input">
+            <article class="article-name">
+                <label for="nameId">nome</label>
+                <input required type="text" id="nameId" placeholder="Digite Seu Nome" class="input">
             </article>
-            <article>
-                <label for="email">email</label>
-                <input type="email" id="email" placeholder="exemplo@gmail.com" class="input">
+            <article class="article-email">
+                <label for="emailId">email</label>
+                <input required type="email" id="emailId" placeholder="exemplo@gmail.com" class="input">
             </article>
-            <article>
-                <label for="">mensagem</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+            <article class="article-message">
+                <label for="messageId">mensagem</label>
+                <textarea required class="text-area" id="messageId" cols="30" rows="10" placeholder="Digite Sua Mensagem"></textarea>
             </article>
-            <button type="submit">enviar</button>
-            <input type="hidden" name="accessKey" value="b77116fb-8c92-4c60-af46-1a42d341a382">
-            <input type="hidden" name="redirectTo" value="index.html">
+            <div class="div-button">
+                <button type="submit" class="button">enviar</button>
+            </div>
+                <input type="hidden" name="accessKey" value="b77116fb-8c92-4c60-af46-1a42d341a382">
+                <input type="hidden" name="redirectTo" value="index.html">
         </form>
     </section>
 </main>

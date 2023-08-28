@@ -5,7 +5,7 @@
     font-family: $font-family;
 }
 
-main {
+.main-container {
     background-image: $image-background;
     background-position: center;
 
@@ -48,9 +48,13 @@ main {
     font-weight: 600;
 }
 
-article {
+.div-button {
     margin-top: 15px;
     text-align: center;
+    & a {
+        text-decoration: none;
+        color: $font-tertiary-color;
+    }
 }
 
 @media (max-width: 1150px) {
