@@ -17,6 +17,8 @@
 
     box-shadow: $box-shadow;
 
+    cursor: pointer;
+
     &:hover {
         background-color: $color-effect-primary;
     }

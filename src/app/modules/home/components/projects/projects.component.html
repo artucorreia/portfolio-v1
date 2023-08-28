@@ -1,7 +1,7 @@
 <main>
     <h1 class="title">projetos</h1>
     <section *ngFor="let project of projectList" [ngClass]="{'container': true,'loading': project.loading}">
-        <img [src]="project.img" [alt]="project.imgAlt">
+        <img [src]="project.img" [alt]="project.imgAlt" class="img-project">
         <h3 class="title">{{project.title}}</h3>
         <p class="contain">{{project.about}}</p>
         <article class="buttons-links">
