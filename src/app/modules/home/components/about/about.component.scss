@@ -5,7 +5,7 @@
     font-family: $font-family;
 }
 
-.main-container {
+.upper-container {
     background-image: $image-background;
     background-position: center;
 
@@ -57,21 +57,84 @@
     }
 }
 
+.lower-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+
+    margin: 70px 20px;
+    height: 100vh;
+
+    justify-content: space-between;
+
+    color: $font-primary-color;
+
+    & .sub-title{
+        text-transform: uppercase;
+
+        margin-bottom: 20px;
+    }
+}
+
+.container-about-me {
+    line-height: 1.6em;
+
+    color: $font-primary-color;
+
+    // text-align: justify;
+
+    & .button {
+        display: block;
+        text-decoration: none;
+        margin-top: 10px;
+        width: 80px;
+    }
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .skill {
+        font-size: 1em;
+        font-weight: 600;
+        
+        background-color: rgba(153,153,153,.2);
+        color: $font-primary-color;
+        
+        padding: 10px 7px;
+        margin: 0 7px 7px 0;
+    
+        border-radius: 3px;
+    }
+}
+
 @media (max-width: 1150px) {
     .container {
         max-width: 475px;
     }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 680px) {
     .title {
         font-size: 1.7em;
     }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 580px) {
     .title {
         font-size: 1.5em;
     }
 
+    .lower-container {
+        display: block;
+        & > .about-me {
+            margin-bottom: 70px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
     .contain {
         font-size: 0.9em;
     }
