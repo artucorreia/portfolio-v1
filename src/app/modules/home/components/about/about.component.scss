@@ -10,7 +10,6 @@
     color: $font-primary-color;
 
     text-transform: uppercase;
-    margin: 70px 0;
 }
 
 .div-button {
@@ -22,7 +21,7 @@
     }
 }
 
-.lower-container {
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
@@ -36,6 +35,7 @@
 
     & .sub-title{
         text-transform: uppercase;
+        color: #000;
 
         margin-bottom: 20px;
     }
@@ -45,8 +45,6 @@
     line-height: 1.6em;
 
     color: $font-primary-color;
-
-    // text-align: justify;
 
     & .button {
         display: block;
