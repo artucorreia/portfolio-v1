@@ -5,47 +5,12 @@
     font-family: $font-family;
 }
 
-.upper-container {
-    background-image: $image-background;
-    background-position: center;
-
-    height: 82vh;
-    padding: 7px;
-
-    position: relative;
-}
-
-.container {
-    max-width: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .title {
-    font-size: 2.1em;
-    font-weight: 800;
-
     text-align: center;
+    color: $font-primary-color;
+
     text-transform: uppercase;
-
-    color: $font-primary-color;
-    text-shadow: $text-shadow;
-
-    margin-bottom: 10px;
-}
-
-.contain {
-    margin: 20px auto;
-    
-    text-align: center;
-    color: $font-primary-color;
-    text-shadow: $text-shadow;
-}
-
-.emphasis {
-    font-weight: 600;
+    margin: 70px 0;
 }
 
 .div-button {
@@ -109,33 +74,11 @@
     }
 }
 
-@media (max-width: 1150px) {
-    .container {
-        max-width: 475px;
-    }
-}
-
-@media (max-width: 680px) {
-    .title {
-        font-size: 1.7em;
-    }
-}
-
 @media (max-width: 580px) {
-    .title {
-        font-size: 1.5em;
-    }
-
     .lower-container {
         display: block;
         & > .about-me {
             margin-bottom: 70px;
         }
-    }
-}
-
-@media (max-width: 400px) {
-    .contain {
-        font-size: 0.9em;
     }
 }
