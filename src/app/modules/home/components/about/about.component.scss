@@ -73,10 +73,16 @@
 }
 
 @media (max-width: 580px) {
-    .lower-container {
+    .container {
         display: block;
+
         & > .about-me {
             margin-bottom: 70px;
         }
+    }
+
+    .button {
+        display: block;
+        margin: auto;
     }
 }

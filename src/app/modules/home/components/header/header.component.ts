@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  display: string = 'block';
+  menuOpen: boolean = false;
 
+  constructor() { }
+
+  displayMenu() {
+
+  }
 }
