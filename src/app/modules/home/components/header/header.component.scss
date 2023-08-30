@@ -8,18 +8,12 @@
     position: fixed;
     z-index: 1000;
 
-    // display: flex;
-    // justify-content: space-between;
-
     background-color: $color-tertiary;
     box-shadow: $box-shadow-header;
 
     width: 100%;
-    // padding: 15px 0;
     
     color: $font-primary-color;
-
-    
 }
 
 .container {
@@ -31,9 +25,7 @@
 .container-logo {
     display: flex;
     align-items: center;
-
-    // padding: 0 40px;
-    
+  
     & a {
         color: $font-primary-color;
         text-decoration: none;
@@ -62,7 +54,6 @@
 .nav-bar {
     align-items: center;
     display: flex;
-    // padding: 0 40px;
 
     font-size: 0.9em;
 }
@@ -167,7 +158,6 @@
 }
 
 @media (max-width: 600px) {
-    // nav-bar vira um botão
     .nav-bar {
         display: none;
     }
