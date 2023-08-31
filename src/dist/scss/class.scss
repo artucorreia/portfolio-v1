@@ -24,8 +24,6 @@
 
     color: #000;
     
-    // letter-spacing: 1px;
-    
     text-transform: uppercase;
     text-align: center;
 }
@@ -54,4 +52,28 @@
     &:hover {
         background-color: $color-effect-primary;
     }
+}
+
+.divider {
+    background-color: $color-quaternary;
+
+    margin: 15px auto;
+    width: 30px;
+    height: 5px;
+    
+    border-radius: 5px;
+}
+
+.describe {
+    display: block;
+    margin: auto;
+    width: 80vw;
+
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    
+    text-align: center;
+    font-size: 1em;
+
+    color: $font-primary-color;
 }

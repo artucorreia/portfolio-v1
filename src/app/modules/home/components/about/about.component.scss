@@ -5,6 +5,10 @@
     font-family: $font-family;
 }
 
+.container_main {
+    background-color: $color-quintenary;
+}
+
 .title {
     text-align: center;
     color: $font-primary-color;
@@ -26,8 +30,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10rem;
 
-    margin: 70px 20px;
-    height: 100vh;
+    padding: 60px 20px;
 
     justify-content: space-between;
 
@@ -43,8 +46,13 @@
 
 .container-about-me {
     line-height: 1.6em;
+    scroll-behavior: smooth;
 
     color: $font-primary-color;
+
+    & > p {
+        padding-bottom: 1em;
+    }
 
     & .button {
         display: block;
@@ -72,7 +80,7 @@
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 700px) {
     .container {
         display: block;
 
@@ -81,8 +89,8 @@
         }
     }
 
-    .button {
-        display: block;
-        margin: auto;
-    }
+    // .button {
+    //     display: block;
+    //     margin: auto;
+    // }
 }

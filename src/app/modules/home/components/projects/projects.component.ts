@@ -33,7 +33,7 @@ export class ProjectsComponent {
       linkWeb: 'https://artucorreia.github.io/lista-tarefas/'
     }
   ];
-
+  describe: string = 'Aqui você vai encontrar alguns dos meus projetos mais legais';
   constructor() { }
 
 }

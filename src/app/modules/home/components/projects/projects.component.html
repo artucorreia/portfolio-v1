@@ -1,5 +1,7 @@
 <main id="projects" class="container_main">
     <h1 class="title_main">projetos</h1>
+    <div class="divider"></div>
+    <span class="describe">{{describe}}</span>
     <section *ngFor="let project of projectList" class="container">
         <img [src]="project.img" [alt]="project.imgAlt" class="img-project">
         <h3 class="title">{{project.title}}</h3>
