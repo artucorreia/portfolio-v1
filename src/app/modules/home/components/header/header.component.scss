@@ -102,33 +102,32 @@
     text-align: end;
 }
 
-.nav-bar-list-div:first-of-type {
+.nav-bar-list-link:first-of-type {
     border-top: 1px solid #eee;
 }
+  
+.nav-bar-list-link {
+    display: block;
 
-.nav-bar-list-div {
-    padding: 15px 35px;
+    padding: 20px 35px;
 
     border-bottom: 1px solid #eee;
     
-    & .nav-bar-list-link {
-        color: $font-primary-color;
-        
-        text-decoration: none;
-        text-transform: uppercase;
-        
-        transition-duration: 0.3s;
-        
-        font-weight: bold;
-        font-size: 0.9em;
-
-        letter-spacing: 2px;
-        
-        &:hover {
-            color: $color-quaternary;
-        }
-    }
+    color: $font-primary-color;
     
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    transition-duration: 0.3s;
+    
+    font-weight: bold;
+    font-size: 0.9em;
+
+    letter-spacing: 2px;
+    
+    &:hover {
+        color: $color-quaternary;
+    }
 }
 
 @media (max-width: 900px) {
