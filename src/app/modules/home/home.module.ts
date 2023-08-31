@@ -8,6 +8,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CapeComponent } from './components/cape/cape.component';
 
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { CapeComponent } from './components/cape/cape.component';
     CapeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class HomeModule { }

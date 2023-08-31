@@ -3,24 +3,31 @@
     <div class="divider"></div>
     <span class="describe">{{describe}}</span>
     <section class="card">
-        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form #form="ngForm" (ngSubmit)="submitForm(form)">
             <article class="article-name">
                 <label for="nameId">nome</label>
-                <input required type="text" id="nameId" placeholder="Digite Seu Nome" class="input">
+                <input required type="text" id="nameId" name="name" placeholder="Digite Seu Nome" #name="ngModel" [ngModel]="name.value" [ngClass]="{'input': true, 'invalidInput': !name.valid && (name.dirty && name.touched)}">
+                <span *ngIf="!name.valid && (name.dirty && name.touched)" class="invalidMessage">
+                    Campo Inválido
+                </span>
             </article>
             <article class="article-email">
                 <label for="emailId">email</label>
-                <input required type="email" id="emailId" placeholder="exemplo@gmail.com" class="input">
+                <input required type="email" id="emailId" name="email" placeholder="exemplo@gmail.com" #email="ngModel" [ngModel]="email.value" [ngClass]="{'input': true, 'invalidInput': !email.valid && (email.dirty && email.touched)}">
+                <span *ngIf="!email.valid && (email.dirty && email.touched)" class="invalidMessage">
+                    Campo Inválido
+                </span>
             </article>
             <article class="article-message">
                 <label for="messageId">mensagem</label>
-                <textarea required class="text-area" id="messageId" cols="30" rows="10" placeholder="Digite Sua Mensagem"></textarea>
+                <textarea required id="messageId" name="message" cols="30" rows="10" placeholder="Digite Sua Mensagem" #message="ngModel" [ngModel]="message.value" [ngClass]="{'text-area': true, 'invalidInput': !message.valid && (message.dirty && message.touched)}"></textarea>
+                <span *ngIf="!message.valid && (message.dirty && message.touched)" class="invalidMessage">
+                    Campo Inválido
+                </span>
             </article>
             <div class="div-button">
-                <button type="submit" class="button">enviar</button>
+                <button type="submit" class="button" [disabled]="form.invalid">enviar</button>
             </div>
-                <input type="hidden" name="accessKey" value="b77116fb-8c92-4c60-af46-1a42d341a382">
-                <input type="hidden" name="redirectTo" value="index.html">
         </form>
     </section>
 </main>
