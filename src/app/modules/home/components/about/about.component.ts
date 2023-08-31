@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  skills: string[] = ['HTML', 'CSS', 'JavaScript', 'GIT', 'GitHub', 'TypeScript', 'Angular', 'SCSS', 'SQL Oracle'];
 
+  constructor() { }
 }

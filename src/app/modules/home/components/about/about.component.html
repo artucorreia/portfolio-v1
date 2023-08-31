@@ -13,14 +13,9 @@
             <article class="skills-container">
                 <h3 class="sub-title">minhas habilidades</h3> <br>
                 <div class="skills">
-                    <span class="skill">HTML5</span>
-                    <span class="skill">CSS3</span>
-                    <span class="skill">JavaScript</span>
-                    <span class="skill">GIT</span>
-                    <span class="skill">GitHub</span>
-                    <span class="skill">TypeScript</span>
-                    <span class="skill">Angular</span>
-                    <span class="skill">SQL Oracle</span>
+                    <span class="skill" *ngFor="let skill of skills">
+                        {{skill}}
+                    </span>
                 </div>
             </article>
         </section>
