@@ -77,6 +77,24 @@
         margin: 0 7px 7px 0;
     
         border-radius: 3px;
+
+        & .img-logo {
+            transform: translate(0, 5px);
+
+            transition-duration: 0.3s;
+        }
+
+        &:hover {
+            .img-logo {
+                transform: translate(0, -0.5px);
+            }
+        }
+        
+        &:active {
+            .img-logo {
+                transform: translate(0, 3px);
+            }
+        }
     }
 }
 

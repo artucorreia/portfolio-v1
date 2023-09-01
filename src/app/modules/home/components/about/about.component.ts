@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Skill } from '../../model/skill';
 
 @Component({
   selector: 'app-about',
@@ -6,17 +7,46 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  skills: string[] = [
-    'HTML', 
-    'CSS', 
-    'JavaScript', 
-    'GIT', 
-    'GitHub', 
-    'TypeScript', 
-    'Angular', 
-    'SCSS', 
-    'SQL Oracle'
-  ];
+  skills: Skill[] = [
+    {
+      name: 'HTML', 
+      logo: 'assets/png/html5.png'
+    },
+    {
+      name: 'CSS', 
+      logo: 'assets/png/css3.png'
+    },
+    {
+      name: 'JavaScript', 
+      logo: 'assets/png/javascript.png'
+    },
+    {
+      name: 'GIT', 
+      logo: 'assets/png/git.png'
+    },
+    {
+      name: 'GitHub', 
+      logo: 'assets/png/github.png'
+    },
+    {
+      name: 'TypeScript', 
+      logo: 'assets/png/typescript.png'
+    },
+    {
+      name: 'Angular', 
+      logo: 'assets/png/angular.png'
+    },
+    {
+      name: 'SCSS', 
+      logo: 'assets/png/sass.png'
+    },
+    {
+      name: 'SQL Oracle', 
+      logo: 'assets/png/oracle.png'
+    },
+  ]
+
+  mouseHover: boolean = false;
 
   describe: string = 'Aqui você vai encontrar mais informações sobre mim, o que eu faço atualmente, minhas metas, além de conhecer um pouco das minhas habilidades e tecnologias que domino';
 
