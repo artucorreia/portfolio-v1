@@ -50,6 +50,9 @@
 .input, .text-area {
     display: grid;
 
+    text-indent: 10px;
+    padding: 1.5em 0;
+
     outline-style: none;
 
     background-color: #f0f0f0;
@@ -72,14 +75,8 @@
 
 }
 
-.input {
-    text-indent: 10px;
-    padding: 1.5em 0;
-}
-
 .text-area {
     resize: none;
-    padding: 1.5em 10px;  
 }
 
 .invalidInput {

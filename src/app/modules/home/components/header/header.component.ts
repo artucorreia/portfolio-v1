@@ -11,7 +11,7 @@ export class HeaderComponent {
 
   constructor() { }
 
-  displayMenu() {
+  displayMenu() { 
     if (this.menuOpen) {
       this.menuOpen = false;
       this.display = 'none';
