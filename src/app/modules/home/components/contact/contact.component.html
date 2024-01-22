@@ -3,28 +3,49 @@
     <div class="divider"></div>
     <span class="describe">{{describe}}</span>
     <section class="card">
-        <form #form="ngForm" (ngSubmit)="submitForm(form)">
+        <form [formGroup]="form" (ngSubmit)="submitForm(form)">
             <article class="article-name">
                 <label for="nameId">nome</label>
-                <input required type="text" id="nameId" name="name" placeholder="Digite Seu Nome" #name="ngModel" [ngModel]="name.value" [ngClass]="{'input': true, 'invalidInput': !name.valid && (name.dirty && name.touched)}">
-                <span *ngIf="!name.valid && (name.dirty && name.touched)" class="invalidMessage">
+                
+                <input type="text" id="nameId" formControlName="name" placeholder="Digite Seu Nome" maxlength="50" 
+                [ngClass]="{
+                    'input': true, 
+                    'invalidInput': form.get('name')?.invalid && (form.get('name')?.dirty && form.get('name')?.touched)
+                }">
+                
+                <span *ngIf="form.get('name')?.invalid && (form.get('name')?.dirty && form.get('name')?.touched)" class="invalidMessage">
                     Campo Inválido
                 </span>
             </article>
             <article class="article-email">
                 <label for="emailId">email</label>
-                <input required type="email" id="emailId" name="email" placeholder="exemplo@gmail.com" #email="ngModel" [ngModel]="email.value" [ngClass]="{'input': true, 'invalidInput': !email.valid && (email.dirty && email.touched)}">
-                <span *ngIf="!email.valid && (email.dirty && email.touched)" class="invalidMessage">
+                
+                <input type="email" id="emailId" formControlName="email" placeholder="exemplo@gmail.com" 
+                [ngClass]="{
+                    'input': true, 
+                    'invalidInput': form.get('email')?.invalid && (form.get('email')?.dirty && form.get('email')?.touched)
+                }" 
+                minlength="10" maxlength="65">
+                
+                <span *ngIf="
+                form.get('email')?.invalid && (form.get('email')?.dirty && form.get('email')?.touched)" 
+                class="invalidMessage">
                     Campo Inválido
                 </span>
             </article>
             <article class="article-message">
                 <label for="messageId">mensagem</label>
-                <textarea required id="messageId" name="message" cols="30" rows="10" placeholder="Digite Sua Mensagem" #message="ngModel" [ngModel]="message.value" [ngClass]="{'text-area': true, 'invalidInput': !message.valid && (message.dirty && message.touched)}"></textarea>
-                <span *ngIf="!message.valid && (message.dirty && message.touched)" class="invalidMessage">
+                <textarea id="messageId" formControlName="message" cols="30" rows="10" placeholder="Digite Sua Mensagem Aqui" 
+                [ngClass]="{
+                    'text-area': true, 
+                    'invalidInput': form.get('message')?.invalid && (form.get('message')?.dirty && form.get('message')?.touched)}" minlength="1" maxlength="300">
+                </textarea>
+                
+                <span *ngIf="form.get('message')?.invalid && (form.get('message')?.dirty && form.get('message')?.touched)" class="invalidMessage">
                     Campo Inválido
                 </span>
             </article>
+
             <div class="div-button">
                 <button type="submit" class="button" [disabled]="form.invalid">enviar</button>
             </div>
